@@ -10,3 +10,8 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/primality-test.iml
+.idea/
+primality-test.iml
+src/main/resources/
+target/

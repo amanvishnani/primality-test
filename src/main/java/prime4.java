@@ -7,6 +7,7 @@ public class prime4 extends com.amanvishnani.utility {
         computeTenThousand();
         computeHundredThousand();
         computeMillion();
+        computeTenMillion();
     }
 
 
@@ -53,9 +54,11 @@ public class prime4 extends com.amanvishnani.utility {
     public static void computeHundredThousand(){
         compute(100000);
     }
-
     public static void computeMillion(){
         compute(1000000);
+    }
+    public static void computeTenMillion(){
+        compute(10000000);
     }
 }
 
@@ -76,6 +79,11 @@ public class prime4 extends com.amanvishnani.utility {
 * Total Computations = 1078496
 * Total Time Required for Computations = 453ms
 *
+* =====================> Range = 10000000 <======================
+* Total Primes = 664579
+* Total Computations = 578497
+* Total Time Required for Computations = 10.941S
+*
 *                  -: Second Run :-
 *
 * =====================> Range = 10000 <======================
@@ -91,5 +99,9 @@ public class prime4 extends com.amanvishnani.utility {
 * Total Computations = 578497
 * Total Time Required for Computations = 464ms
 *
+* =====================> Range = 10000000 <======================
+* Total Primes = 664579
+* Total Computations = 578497
+* Total Time Required for Computations = 9.199S
 *
 * */

@@ -13,15 +13,17 @@ public class prime5 extends com.amanvishnani.utility {
 
     public static boolean isPrime(long number)
     {
-        if(number % 2 ==0)
-            return number==2;
-        else
-            for (long i=3; i<=Math.sqrt(number); i=i+2)
-            {
-                if(number%i==0)
+        if(number == 2 ||number == 3)
+            return true;
+        else {
+            for (long i = 1; (6 * i - 1) <= Math.sqrt(number); i++) {
+                if ((6 * i - 1) <= Math.sqrt(number) && number % (6 * i - 1) == 0)
+                    return false;
+                if ((6 * i + 1) <= Math.sqrt(number)&& number % (6 * i + 1) == 0)
                     return false;
                 isPrimeFunctionComputations++;
             }
+        }
         return true;
     }
 
@@ -72,20 +74,20 @@ public class prime5 extends com.amanvishnani.utility {
 * =====================> Range = 10000 <======================
 * Total Primes = 1229
 * Total Computations = 2895
-* Total Time Required for Computations = 0ms
+* Total Time Required for Computations = 2ms
 * =====================> Range = 100000 <======================
 * Total Primes = 9592
 * Total Computations = 26258
-* Total Time Required for Computations = 32ms
+* Total Time Required for Computations = 21ms
 * =====================> Range = 1000000 <======================
 * Total Primes = 78498
 * Total Computations = 245164
-* Total Time Required for Computations = 437ms
+* Total Time Required for Computations = 392ms
 *
 * =====================> Range = 1000000 <======================
 * Total Primes = 664579
 * Total Computations = 2331245
-* Total Time Required for Computations = 9.114S
+* Total Time Required for Computations = 6.196S
 *
 *
 * */

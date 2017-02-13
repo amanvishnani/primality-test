@@ -70,9 +70,9 @@ public class prime1 extends com.amanvishnani.utility {
 * Total Primes = 9592
 * Total Computations = 455148742
 * Total Time Required for Computations = 4.755S
-* =====================> Range = 37566904990 <======================
+* =====================> Range = 1000000 <======================
 * Total Primes = 78498
-* Total Computations = 1078496
+* Total Computations = 37566904990
 * Total Time Required for Computations = 384.175S
 *
 *

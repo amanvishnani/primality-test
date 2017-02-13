@@ -27,9 +27,9 @@ public class prime5 extends com.amanvishnani.utility {
         return true;
     }
 
-    public static void compute(long x)
+    public static void compute(long max)
     {
-        long max = x, startTime, totalPrime=2, totalComputations=0;
+        long startTime, totalPrime=2, totalComputations=0;
         startTime=System.currentTimeMillis();
         for(long k=1; (6*k+1)<=max; k++)
         {
@@ -44,7 +44,7 @@ public class prime5 extends com.amanvishnani.utility {
             totalComputations++;
         }
         long endTime =System.currentTimeMillis();
-        totalComputations= totalComputations+totalPrime;
+        totalComputations= totalComputations+isPrimeFunctionComputations;
         log("=====================> Range = "+max+" <======================");
         log("Total Primes = " + totalPrime);
         log("Total Computations = " + totalComputations);
@@ -73,21 +73,21 @@ public class prime5 extends com.amanvishnani.utility {
 *                       -: First Run :-
 * =====================> Range = 10000 <======================
 * Total Primes = 1229
-* Total Computations = 2895
+* Total Computations = 18069
 * Total Time Required for Computations = 2ms
 * =====================> Range = 100000 <======================
 * Total Primes = 9592
-* Total Computations = 26258
-* Total Time Required for Computations = 21ms
+* Total Computations = 440518
+* Total Time Required for Computations = 16ms
 * =====================> Range = 1000000 <======================
 * Total Primes = 78498
-* Total Computations = 245164
-* Total Time Required for Computations = 392ms
+* Total Computations = 11106344
+* Total Time Required for Computations = 331ms
 *
 * =====================> Range = 1000000 <======================
 * Total Primes = 664579
-* Total Computations = 2331245
-* Total Time Required for Computations = 6.196S
+* Total Computations = 289108183
+* Total Time Required for Computations = 6.305S
 *
 *
 * */

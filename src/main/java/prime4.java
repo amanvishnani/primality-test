@@ -38,7 +38,7 @@ public class prime4 extends com.amanvishnani.utility {
             totalComputations++;
         }
         long endTime =System.currentTimeMillis();
-        totalComputations= totalComputations+totalPrime;
+        totalComputations= totalComputations+isPrimeFunctionComputations;
         log("=====================> Range = "+max+" <======================");
         log("Total Primes = " + totalPrime);
         log("Total Computations = " + totalComputations);
@@ -68,40 +68,21 @@ public class prime4 extends com.amanvishnani.utility {
 *
 * =====================> Range = 10000 <======================
 * Total Primes = 1229
-* Total Computations = 11227
+* Total Computations = 57186
 * Total Time Required for Computations = 0ms
 * =====================> Range = 100000 <======================
 * Total Primes = 9592
-* Total Computations = 109590
+* Total Computations = 1355033
 * Total Time Required for Computations = 16ms
 * =====================> Range = 1000000 <======================
 * Total Primes = 78498
-* Total Computations = 1078496
+* Total Computations = 33679057
 * Total Time Required for Computations = 453ms
 *
 * =====================> Range = 10000000 <======================
 * Total Primes = 664579
-* Total Computations = 578497
+* Total Computations = 871103734
 * Total Time Required for Computations = 10.941S
 *
-*                  -: Second Run :-
-*
-* =====================> Range = 10000 <======================
-* Total Primes = 1229
-* Total Computations = 6228
-* Total Time Required for Computations = 0ms
-* =====================> Range = 100000 <======================
-* Total Primes = 9592
-* Total Computations = 59591
-* Total Time Required for Computations = 16ms
-* =====================> Range = 1000000 <======================
-* Total Primes = 78498
-* Total Computations = 578497
-* Total Time Required for Computations = 464ms
-*
-* =====================> Range = 10000000 <======================
-* Total Primes = 664579
-* Total Computations = 578497
-* Total Time Required for Computations = 9.199S
 *
 * */

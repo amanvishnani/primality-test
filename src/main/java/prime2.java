@@ -37,7 +37,7 @@ public class prime2 extends com.amanvishnani.utility {
             totalComputations++;
         }
         long endTime =System.currentTimeMillis();
-        totalComputations= totalComputations+totalPrime;
+        totalComputations= totalComputations+isPrimeFunctionComputations;
         log("=====================> Range = "+max+" <======================");
         log("Total Primes = " + totalPrime);
         log("Total Computations = " + totalComputations);
@@ -62,15 +62,15 @@ public class prime2 extends com.amanvishnani.utility {
 *
 * =====================> Range = 10000 <======================
 * Total Primes = 1229
-* Total Computations = 11227
+* Total Computations = 2902644
 * Total Time Required for Computations = 32ms
 * =====================> Range = 100000 <======================
 * Total Primes = 9592
-* Total Computations = 109590
+* Total Computations = 227945682
 * Total Time Required for Computations = 2.519S
 * =====================> Range = 1000000 <======================
 * Total Primes = 78498
-* Total Computations = 1078496
+* Total Computations = 18791664734
 * Total Time Required for Computations = 185.426S
 *
 * */
